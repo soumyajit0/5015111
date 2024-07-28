@@ -6,8 +6,6 @@ import dependencies.StripeGateway;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println();
-
         PaymentProcessor payPalProcessor = new PayPalAdapter(new PayPalGateway());
         PaymentProcessor stripeProcessor = new StripeAdapter(new StripeGateway());
 
